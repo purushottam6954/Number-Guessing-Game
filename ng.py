@@ -19,11 +19,10 @@ while True:
         if user_guess==random_number:
             print("You guessed it right!")
             break
+        elif user_guess > random_number:
+            print("You were above the number")
         else:
-            if user_guess > random_number:
-                print("You were above the number")
-            else:
-                print("You were below the number")
+            print("You were below the number")
 
     else:
         print("Please enter a number Only!")
