@@ -8,7 +8,7 @@ if top_of_range.isdigit():
 else:
     print("Please type a number next time!")    
     quit()    
-r=random.randint(0,top_of_range)
+random_number=random.randint(0,top_of_range)
 guesses=0
 
 while True:
@@ -16,7 +16,7 @@ while True:
     if user_guess.isdigit():
         guesses+=1
         user_guess=int(user_guess)
-        if user_guess==r:
+        if user_guess==random_number:
             print("You guessed it right!")
             break
         else:
