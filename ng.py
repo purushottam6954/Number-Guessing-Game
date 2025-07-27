@@ -1,5 +1,5 @@
 import random
-top_of_range=input("Enter a number: ")
+top_of_range=input("Enter a Number: ")
 if top_of_range.isdigit():
     top_of_range=int(top_of_range)
     if top_of_range <=0:
@@ -20,13 +20,16 @@ while True:
             print("You guessed it right!")
             break
         else:
-            print("Try Again")
-            continue
+            if user_guess > random_number:
+                print("You were above the number")
+            else:
+                print("You were below the number")
 
     else:
         print("Please enter a number Only!")
         continue  
-print("Congrats it took you "+str(guesses)+" guesses")
+print("You got it in",guesses,"guesses")
+
     
 
 
